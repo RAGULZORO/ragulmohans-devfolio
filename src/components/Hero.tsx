@@ -42,8 +42,7 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Passionate about creating innovative web solutions with expertise in{' '}
               <span className="text-portfolio-secondary font-semibold">modern frameworks</span>,{' '}
-              <span className="text-portfolio-accent font-semibold">cloud technologies</span>, and{' '}
-              <span className="text-portfolio-primary font-semibold">cybersecurity practices</span>.
+              <span className="text-portfolio-accent font-semibold">cloud technologies</span>.
             </p>
           </div>
 
@@ -67,7 +66,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 animate-fade-in-up">
             <a
-              href="https://github.com/ragulmohanraj"
+              href="https://github.com/RAGULZORO"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card border border-card-border hover:bg-portfolio-primary hover:text-white transition-all duration-300 hover:scale-110"
@@ -76,7 +75,7 @@ const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com/in/ragulmohanraj"
+              href="https://www.linkedin.com/in/ragul-mohanraj-627970383/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card border border-card-border hover:bg-portfolio-secondary hover:text-white transition-all duration-300 hover:scale-110"
@@ -85,7 +84,7 @@ const Hero = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="mailto:ragul@example.com"
+              href="mailto:ragulmohanrajm@example.com"
               className="p-3 rounded-full bg-card border border-card-border hover:bg-portfolio-accent hover:text-white transition-all duration-300 hover:scale-110"
               aria-label="Email Contact"
             >
