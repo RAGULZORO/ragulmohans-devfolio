@@ -8,8 +8,8 @@ const Projects = () => {
       icon: BookOpen,
       tags: ['React', 'Firebase', 'Material-UI', 'Authentication'],
       color: 'from-blue-500 to-purple-600',
-      github: 'https://github.com/ragulmohanraj/note-nest',
-      live: 'https://note-nest-demo.com',
+      github: 'https://github.com/RAGULZORO/campus-knowledge-share',
+      live: 'https://notenest-mu.vercel.app/',
       features: ['File Upload & Management', 'User Authentication', 'Search & Filter', 'Responsive Design'],
     },
     {
@@ -18,8 +18,8 @@ const Projects = () => {
       icon: ShoppingCart,
       tags: ['Vue.js', 'Node.js', 'Stripe', 'MongoDB'],
       color: 'from-pink-500 to-red-600',
-      github: 'https://github.com/ragulmohanraj/anime-ecommerce',
-      live: 'https://anime-store-demo.com',
+      github: 'https://github.com/RAGULZORO/anime-shadow-store',
+      live: 'https://zorostore-seven.vercel.app/',
       features: ['Shopping Cart', 'Payment Gateway', 'Admin Dashboard', 'Inventory Management'],
     },
     {
@@ -28,8 +28,8 @@ const Projects = () => {
       icon: Users,
       tags: ['React', 'Java Spring', 'PostgreSQL', 'Docker'],
       color: 'from-green-500 to-teal-600',
-      github: 'https://github.com/ragulmohanraj/employee-management',
-      live: 'https://ems-demo.com',
+      github: 'https://github.com/RAGULZORO/corehr-plus',
+      live: '#', // No live demo available
       features: ['Employee Records', 'Performance Tracking', 'Payroll System', 'Report Generation'],
     },
   ];
@@ -126,7 +126,7 @@ const Projects = () => {
             Interested in seeing more of my work?
           </p>
           <a
-            href="https://github.com/ragulmohanraj"
+            href="https://github.com/RAGULZORO"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
