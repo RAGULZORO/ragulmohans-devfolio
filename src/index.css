@@ -55,29 +55,29 @@
   }
 
   .dark {
-    /* Dark Mode Colors */
-    --background: 222 47% 11%; /* #111827 */
-    --foreground: 0 0% 100%;
+    /* Dark Mode Colors - Enhanced visibility */
+    --background: 222 47% 6%; /* Darker background for better contrast */
+    --foreground: 0 0% 98%; /* Slightly off-white for easier reading */
     
     /* Card and Surface Colors */
-    --card: 222 47% 11%;
-    --card-foreground: 0 0% 100%;
-    --card-border: 217 33% 25%;
+    --card: 222 47% 12%; /* Lighter than background for distinction */
+    --card-foreground: 0 0% 95%;
+    --card-border: 217 33% 30%; /* More visible border */
     
     /* Interactive Elements */
-    --primary: 0 0% 100%;
-    --primary-foreground: 0 0% 0%;
-    --secondary: 217 91% 33%;
+    --primary: 0 0% 95%; /* Bright white for better visibility */
+    --primary-foreground: 222 47% 6%; /* Dark text on light background */
+    --secondary: 217 91% 40%; /* Brighter blue */
     --secondary-foreground: 0 0% 100%;
-    --accent: 158 76% 36%;
+    --accent: 158 76% 45%; /* Brighter green */
     --accent-foreground: 0 0% 100%;
     
     /* UI States */
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
-    --border: 217 33% 25%;
-    --input: 217 33% 25%;
-    --ring: 158 76% 36%;
+    --muted: 217 33% 20%; /* More visible muted background */
+    --muted-foreground: 215 20% 75%; /* Higher contrast muted text */
+    --border: 217 33% 30%; /* More visible borders */
+    --input: 217 33% 30%; /* More visible inputs */
+    --ring: 158 76% 45%; /* Brighter ring color */
     
     /* Shadows for dark mode */
     --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
