@@ -50,16 +50,26 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-fade-in-up">
             <button
               onClick={() => scrollToSection('#projects')}
-              className="btn-primary group"
+              className="group relative overflow-hidden bg-gradient-to-r from-portfolio-primary via-portfolio-secondary to-portfolio-accent text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-1"
             >
-              View My Projects
-              <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform duration-300" />
+              <span className="relative z-10 flex items-center">
+                View My Projects
+                <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 group-hover:animate-bounce transition-all duration-300" />
+              </span>
+              {/* Hover overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-portfolio-secondary via-portfolio-accent to-portfolio-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              {/* Animated border */}
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-portfolio-primary via-portfolio-secondary to-portfolio-accent p-[2px] group-hover:animate-pulse">
+                <div className="h-full w-full rounded-xl bg-transparent" />
+              </div>
             </button>
             <button
               onClick={() => scrollToSection('#contact')}
-              className="btn-secondary"
+              className="btn-secondary group relative overflow-hidden"
             >
-              Get In Touch
+              <span className="relative z-10">Get In Touch</span>
+              {/* Subtle hover effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-portfolio-accent/20 to-portfolio-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </button>
           </div>
 

@@ -16,7 +16,7 @@ const Contact = () => {
       title: 'WhatsApp',
       description: 'Quick chat on WhatsApp',
       action: 'Start Conversation',
-      href: 'https://wa.me/919876543210',
+      href: 'https://wa.me/919361944903',
       color: 'from-green-500 to-green-600',
       hoverColor: 'hover:from-green-600 hover:to-green-700',
     },
