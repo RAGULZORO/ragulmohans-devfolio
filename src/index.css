@@ -4,85 +4,99 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Professional Portfolio Design System for RAGUL MOHANRAJ */
+/* Modern Portfolio Design System for RAGUL MOHANRAJ - 2.0 */
 
 @layer base {
   :root {
     /* Light Mode Colors */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    --background: 0 0% 98%;
+    --foreground: 0 0% 5%;
     
-    /* Portfolio Brand Colors */
-    --portfolio-primary: 0 0% 0%; /* Black */
-    --portfolio-secondary: 217 91% 33%; /* Blue #1E3A8A */
-    --portfolio-accent: 158 76% 36%; /* Green #10B981 */
+    /* Modern Brand Colors - Vibrant Tech Palette */
+    --portfolio-primary: 262 83% 58%; /* Purple #8B5CF6 */
+    --portfolio-secondary: 217 91% 60%; /* Bright Blue #3B82F6 */
+    --portfolio-accent: 142 76% 36%; /* Emerald #10B981 */
+    --portfolio-coral: 14 100% 57%; /* Coral #FF5722 */
+    --portfolio-gold: 45 93% 47%; /* Gold #F59E0B */
     
     /* Card and Surface Colors */
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
-    --card-border: 0 0% 90%;
+    --card-foreground: 0 0% 5%;
+    --card-border: 220 13% 91%;
     
     /* Interactive Elements */
-    --primary: 0 0% 0%;
+    --primary: 262 83% 58%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 217 91% 33%;
+    --secondary: 217 91% 60%;
     --secondary-foreground: 0 0% 100%;
-    --accent: 158 76% 36%;
+    --accent: 142 76% 36%;
     --accent-foreground: 0 0% 100%;
     
     /* UI States */
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
-    --border: 0 0% 88%;
-    --input: 0 0% 88%;
-    --ring: 217 91% 33%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8% 46%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 262 83% 58%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(0 0% 0%), hsl(217 91% 15%));
-    --gradient-accent: linear-gradient(135deg, hsl(158 76% 36%), hsl(217 91% 33%));
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 0% / 0.95), hsl(217 91% 15% / 0.95));
+    /* Modern Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(217 91% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(217 91% 60%), hsl(142 76% 36%));
+    --gradient-accent: linear-gradient(135deg, hsl(142 76% 36%), hsl(45 93% 47%));
+    --gradient-hero: linear-gradient(135deg, hsl(262 83% 58% / 0.1), hsl(217 91% 60% / 0.1));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 14% 98%));
+    --gradient-glow: radial-gradient(circle at 50% 50%, hsl(262 83% 58% / 0.3), transparent 70%);
     
-    /* Shadows */
-    --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-glow: 0 0 20px hsl(158 76% 36% / 0.3);
+    /* Enhanced Shadows */
+    --shadow-card: 0 4px 20px -2px hsl(262 83% 58% / 0.1);
+    --shadow-hover: 0 20px 40px -4px hsl(262 83% 58% / 0.2);
+    --shadow-glow: 0 0 40px hsl(262 83% 58% / 0.4);
+    --shadow-neon: 0 0 20px hsl(217 91% 60% / 0.6);
     
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Smooth Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-spring: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     
-    --radius: 0.75rem;
+    --radius: 1rem;
   }
 
   .dark {
-    /* Dark Mode Colors - Enhanced visibility */
-    --background: 222 47% 6%; /* Darker background for better contrast */
-    --foreground: 0 0% 98%; /* Slightly off-white for easier reading */
+    /* Dark Mode Colors - Modern Dark Theme */
+    --background: 222 84% 4%; /* Rich dark background */
+    --foreground: 0 0% 98%;
     
     /* Card and Surface Colors */
-    --card: 222 47% 12%; /* Lighter than background for distinction */
+    --card: 222 84% 8%;
     --card-foreground: 0 0% 95%;
-    --card-border: 217 33% 30%; /* More visible border */
+    --card-border: 262 83% 20%;
     
-    /* Interactive Elements */
-    --primary: 0 0% 95%; /* Bright white for better visibility */
-    --primary-foreground: 222 47% 6%; /* Dark text on light background */
-    --secondary: 217 91% 40%; /* Brighter blue */
+    /* Interactive Elements - Vibrant in Dark Mode */
+    --primary: 262 83% 68%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 91% 70%;
     --secondary-foreground: 0 0% 100%;
-    --accent: 158 76% 45%; /* Brighter green */
+    --accent: 142 76% 46%;
     --accent-foreground: 0 0% 100%;
     
     /* UI States */
-    --muted: 217 33% 20%; /* More visible muted background */
-    --muted-foreground: 215 20% 75%; /* Higher contrast muted text */
-    --border: 217 33% 30%; /* More visible borders */
-    --input: 217 33% 30%; /* More visible inputs */
-    --ring: 158 76% 45%; /* Brighter ring color */
+    --muted: 222 84% 12%;
+    --muted-foreground: 215 20% 80%;
+    --border: 262 83% 20%;
+    --input: 262 83% 20%;
+    --ring: 262 83% 68%;
     
-    /* Shadows for dark mode */
-    --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
-    --shadow-hover: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
-    --shadow-glow: 0 0 20px hsl(158 76% 36% / 0.5);
+    /* Enhanced Dark Mode Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(217 91% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(217 91% 60%), hsl(142 76% 36%));
+    --gradient-hero: linear-gradient(135deg, hsl(222 84% 4% / 0.95), hsl(262 83% 8% / 0.95));
+    --gradient-card: linear-gradient(145deg, hsl(222 84% 8%), hsl(262 83% 12%));
+    
+    /* Glowing Shadows for Dark Mode */
+    --shadow-card: 0 8px 32px -4px hsl(262 83% 58% / 0.3);
+    --shadow-hover: 0 20px 60px -4px hsl(262 83% 58% / 0.4);
+    --shadow-glow: 0 0 60px hsl(262 83% 58% / 0.6);
+    --shadow-neon: 0 0 30px hsl(217 91% 60% / 0.8);
   }
 }
 
@@ -103,45 +117,101 @@
 }
 
 @layer components {
-  /* Professional Card Styles */
+  /* Modern Glass Card Styles */
   .portfolio-card {
-    @apply bg-card border border-card-border rounded-xl p-6 transition-all duration-300;
-    @apply hover:shadow-lg hover:-translate-y-1;
+    background: var(--gradient-card);
+    @apply border border-card-border rounded-2xl p-8 transition-all duration-500;
+    @apply hover:-translate-y-2 hover:scale-[1.02];
     box-shadow: var(--shadow-card);
+    backdrop-filter: blur(10px);
   }
   
   .portfolio-card:hover {
     box-shadow: var(--shadow-hover);
   }
+
+  .portfolio-card-glow {
+    @apply portfolio-card relative overflow-hidden;
+  }
+
+  .portfolio-card-glow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.5s;
+  }
+
+  .portfolio-card-glow:hover::before {
+    left: 100%;
+  }
   
-  /* Skill Level Indicators */
+  /* Advanced Progress Bars */
   .skill-progress {
-    @apply h-2 bg-muted rounded-full overflow-hidden relative;
+    @apply h-3 bg-muted rounded-full overflow-hidden relative shadow-inner;
   }
   
   .skill-progress-fill {
-    @apply h-full bg-gradient-to-r from-portfolio-secondary to-portfolio-accent transition-all duration-1000 ease-out;
+    background: var(--gradient-primary);
+    @apply h-full rounded-full transition-all duration-1000 ease-out relative;
+    box-shadow: 0 0 10px hsl(var(--portfolio-primary) / 0.5);
+  }
+
+  .skill-progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%);
+    animation: shimmer 2s infinite;
   }
   
-  /* Professional Button Variants */
+  /* Premium Button Styles */
   .btn-primary {
-    @apply bg-portfolio-primary text-white hover:bg-portfolio-primary/90 transition-all duration-300;
-    @apply hover:shadow-lg hover:scale-105 font-medium px-6 py-3 rounded-lg;
+    background: var(--gradient-primary);
+    @apply text-white border-0 rounded-xl px-8 py-4 font-semibold transition-all duration-500;
+    @apply hover:scale-110 hover:shadow-2xl hover:-translate-y-1;
+    box-shadow: var(--shadow-card);
   }
   
   .btn-secondary {
-    @apply bg-portfolio-secondary text-white hover:bg-portfolio-secondary/90 transition-all duration-300;
-    @apply hover:shadow-lg hover:scale-105 font-medium px-6 py-3 rounded-lg;
+    background: var(--gradient-secondary);
+    @apply text-white border-0 rounded-xl px-8 py-4 font-semibold transition-all duration-500;
+    @apply hover:scale-110 hover:shadow-2xl hover:-translate-y-1;
   }
   
   .btn-accent {
-    @apply bg-portfolio-accent text-white hover:bg-portfolio-accent/90 transition-all duration-300;
-    @apply hover:shadow-lg hover:scale-105 font-medium px-6 py-3 rounded-lg;
+    background: var(--gradient-accent);
+    @apply text-white border-0 rounded-xl px-8 py-4 font-semibold transition-all duration-500;
+    @apply hover:scale-110 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .btn-glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-xl px-8 py-4;
+    @apply hover:bg-white/20 hover:scale-105 transition-all duration-300 font-medium;
   }
   
-  /* Gradient Text */
+  /* Enhanced Gradient Text */
   .gradient-text {
-    @apply bg-gradient-to-r from-portfolio-secondary to-portfolio-accent bg-clip-text text-transparent;
+    background: var(--gradient-primary);
+    @apply bg-clip-text text-transparent font-bold;
+    background-size: 200% auto;
+    animation: gradient-shift 3s linear infinite;
+  }
+
+  .gradient-text-secondary {
+    background: var(--gradient-secondary);
+    @apply bg-clip-text text-transparent;
+  }
+
+  .gradient-text-accent {
+    background: var(--gradient-accent);
+    @apply bg-clip-text text-transparent;
   }
   
   /* Section Padding */
@@ -184,22 +254,77 @@
 }
 
 @layer utilities {
-  /* Custom animations */
-  @keyframes gradientShift {
+  /* Advanced Animations */
+  @keyframes gradient-shift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
   }
   
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
   }
   
-  @keyframes fadeInUp {
+  @keyframes pulse-glow {
+    0%, 100% { 
+      box-shadow: 0 0 5px hsl(var(--portfolio-primary) / 0.5);
+    }
+    50% { 
+      box-shadow: 0 0 20px hsl(var(--portfolio-primary) / 0.8), 0 0 30px hsl(var(--portfolio-primary) / 0.4);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-10px) rotate(1deg); }
+    66% { transform: translateY(-5px) rotate(-1deg); }
+  }
+  
+  @keyframes bounce-in {
     0% {
       opacity: 0;
-      transform: translateY(30px);
+      transform: scale(0.3) translateY(50px);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05) translateY(-10px);
+    }
+    70% {
+      transform: scale(0.9) translateY(0px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translateY(0px);
+    }
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes zoom-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes text-reveal {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
     }
     100% {
       opacity: 1;
@@ -207,39 +332,84 @@
     }
   }
   
-  @keyframes slideInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
+  /* Animation Classes */
   .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: float 8s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
   }
   
-  .animate-fade-in-up {
-    animation: fadeInUp 0.6s ease-out;
+  .animate-bounce-in {
+    animation: bounce-in 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   
-  .animate-slide-in-right {
-    animation: slideInRight 0.6s ease-out;
+  .animate-slide-in-left {
+    animation: slide-in-left 0.6s ease-out;
+  }
+
+  .animate-zoom-in {
+    animation: zoom-in 0.5s ease-out;
+  }
+
+  .animate-text-reveal {
+    animation: text-reveal 0.8s ease-out;
+  }
+
+  .animate-delay-100 {
+    animation-delay: 100ms;
   }
   
-  /* Scroll animations */
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  /* Scroll Animations */
   .scroll-animation {
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .scroll-animation.animate {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  /* Hover Effects */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-2 hover:scale-105;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+
+  .hover-glow:hover {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .hover-tilt:hover {
+    transform: perspective(1000px) rotateY(5deg) rotateX(5deg);
+  }
+
+  /* Glassmorphism Effects */
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
+  }
+
+  .glass-button {
+    @apply bg-white/20 backdrop-blur-md border border-white/30 rounded-xl;
+    @apply hover:bg-white/30 transition-all duration-300;
   }
 }
 
