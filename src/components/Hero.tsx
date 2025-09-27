@@ -126,13 +126,13 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-20">
         <button
           onClick={() => scrollToSection('#about')}
-          className="group p-3 rounded-full glass-button hover:scale-110 transition-all duration-300"
+          className="group p-4 rounded-full glass-button hover:scale-110 transition-all duration-300 shadow-lg"
           aria-label="Scroll to about section"
         >
-          <ArrowDown className="h-6 w-6 text-portfolio-primary group-hover:text-portfolio-secondary transition-colors duration-300" />
+          <ArrowDown className="h-5 w-5 text-portfolio-primary group-hover:text-portfolio-secondary transition-colors duration-300" />
         </button>
       </div>
     </section>
